@@ -8,11 +8,15 @@ package ifmg.tdd.atividade.pratica;
  *
  * @author Leon
  */
-public class Dollar {
-    int amount = 10;
-       Dollar(int amount) {}			
-       void times(int multiplier) {}
-}
+class Dollar {
+   int amount;
+   Dollar(int amount) {
+      this.amount= amount;
+   }
+   void times(int multiplier) {
+      amount= amount * multiplier;
+   }
+}	
 public void testMultiplication() {
        Dollar five = new Dollar(5);
        five.times(2);
